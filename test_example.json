@@ -3,7 +3,7 @@
     {
       "ID": 1,
       "InternalID": "test-alert-001",
-      "TenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+      "TenantID": "0a0a0000-0000-0aa0-00aa-a00a000aaaa",
       "Name": "Suspicious Network Activity",
       "Severity": "high",
       "Status": "open",
@@ -39,7 +39,7 @@
     {
       "ID": 2,
       "InternalID": "test-alert-002",
-      "TenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+      "TenantID": "0a0a0000-0000-0aa0-00aa-a00a000aaaa",
       "Name": "Windows Defender False Positive",
       "Severity": "low",
       "Status": "open",

@@ -1,7 +1,7 @@
 {
 	"pageNumber": 1,
 	"ids": "",
-	"tenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+	"tenantID": "0a0a0000-0000-0aa0-00aa-a00a000aaaa",
 	"token": "YOUR_BEARER_TOKEN_HERE",
 	"fromDate": "",
 	"toDate": "",
@@ -10,7 +10,7 @@
 	"withAffected": "",
 	"withHistory": "",
 	"outfile": "/etc/xdr-cleaner/out.log",
-	"baseURL": "https://api.louni.priv/xdr/api/v1",
+	"baseURL": "https://your.xdr.addr/xdr/api/v1",
 	"debug": true,
 	"maxConcurrentPages": 50,
 	"filterMode": true,

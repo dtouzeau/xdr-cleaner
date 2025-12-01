@@ -3,8 +3,8 @@
 ## Variables d'environnement
 
 ```bash
-export API_URL="https://api.louni.priv/xdr/api/v1"
-export TENANT_ID="3d6c4203-7328-4fb2-98fa-f37d385ffbde"
+export API_URL="https://your.xdr.addr/xdr/api/v1"
+export TENANT_ID="0a0a0000-0000-0aa0-00aa-a00a000aaaa"
 export TOKEN="AebikvWr5Qx-QmPipsqjHEs_6RUh0ovx5DVm7zXX4iY.d82UaJHL0asAnyYluVE46BZmazV9ILYN3pUQBgVhpf5Vh3hgisOI5mGKxBlyITgtKB-zP9G_3hsbI41czPj9LQ"
 ```
 
@@ -120,8 +120,8 @@ curl -v -k -X GET \
 #!/bin/bash
 # close_alerts.sh
 
-API_URL="https://api.louni.priv/xdr/api/v1"
-TENANT_ID="3d6c4203-7328-4fb2-98fa-f37d385ffbde"
+API_URL="https://your.xdr.addr/xdr/api/v1"
+TENANT_ID="0a0a0000-0000-0aa0-00aa-a00a000aaaa"
 TOKEN="votre-token"
 
 ALERT_IDS=(
@@ -153,8 +153,8 @@ done
 #!/bin/bash
 # fetch_all_pages.sh
 
-API_URL="https://api.louni.priv/xdr/api/v1"
-TENANT_ID="3d6c4203-7328-4fb2-98fa-f37d385ffbde"
+API_URL="https://your.xdr.addr/xdr/api/v1"
+TENANT_ID="0a0a0000-0000-0aa0-00aa-a00a000aaaa"
 TOKEN="votre-token"
 OUTPUT_DIR="./alerts"
 

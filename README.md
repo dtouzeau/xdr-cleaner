@@ -23,9 +23,9 @@ Le fichier `config.json` est créé automatiquement au premier lancement. Édite
 ```json
 {
   "pageNumber": 1,
-  "tenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+  "tenantID": "0a0a0000-0000-0aa0-00aa-a00a000aaaa",
   "token": "VOTRE_TOKEN_BEARER",
-  "baseURL": "https://api.louni.priv/xdr/api/v1",
+  "baseURL": "https://your.xdr.addr/xdr/api/v1",
   "maxConcurrentPages": 50,
   "filterMode": true,
   "filteredOutfile": "/etc/xdr-cleaner/filtered.json",
@@ -254,7 +254,7 @@ Les alertes sont clôturées avec :
 Activez `debug: true` pour obtenir :
 
 ```
-Fetching page 1: https://api.louni.priv/xdr/api/v1?page=1&tenantID=...
+Fetching page 1: https://your.xdr.addr/xdr/api/v1?page=1&tenantID=...
 Page 1 completed: 100 alerts
 Matched Observable.Value: 192.168.1.100 contains 192.168.1
 ✓ Closed: c445d5bb-d426-46d2-8c91-9ff4a8cb044c (Suspicious Activity)
@@ -273,7 +273,7 @@ POST /xdr/api/v1/alerts/close?tenantID={tenantID}
 ```json
 {
   "ID": "c445d5bb-d426-46d2-8c91-9ff4a8cb044c",
-  "TenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+  "TenantID": "0a0a0000-0000-0aa0-00aa-a00a000aaaa",
   "Reason": "falsePositive"
 }
 ```
