@@ -248,11 +248,11 @@ Les alertes sont écrites sur disque tous les `flushEvery` téléchargements, li
 Fetching alerts...
 Total alerts fetched: 1250
 
-Saved 1250 alerts to /home/claude/xdr-cleaner/out.log
+Saved 1250 alerts to /etc/xdr-cleaner/out.log
 
 === Filtering Alerts ===
 Filtered 45 alerts from 1250 total
-Saved 45 filtered alerts to /home/claude/xdr-cleaner/filtered.json
+Saved 45 filtered alerts to /etc/xdr-cleaner/filtered.json
 
 === Closing Filtered Alerts ===
 Starting to close 45 alerts...

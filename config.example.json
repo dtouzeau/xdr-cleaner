@@ -9,12 +9,12 @@
 	"withEvents": "true",
 	"withAffected": "",
 	"withHistory": "",
-	"outfile": "/home/claude/xdr-cleaner/out.log",
+	"outfile": "/etc/xdr-cleaner/out.log",
 	"baseURL": "https://api.louni.priv/xdr/api/v1",
 	"debug": true,
 	"maxConcurrentPages": 50,
 	"filterMode": true,
-	"filteredOutfile": "/home/claude/xdr-cleaner/filtered.json",
+	"filteredOutfile": "/etc/xdr-cleaner/filtered.json",
 	"filters": [
 		{
 			"field": "Observable|Value",

@@ -28,7 +28,7 @@ Le fichier `config.json` est créé automatiquement au premier lancement. Édite
   "baseURL": "https://api.louni.priv/xdr/api/v1",
   "maxConcurrentPages": 50,
   "filterMode": true,
-  "filteredOutfile": "/home/claude/xdr-cleaner/filtered.json",
+  "filteredOutfile": "/etc/xdr-cleaner/filtered.json",
   "filters": [
     {
       "field": "Observable|Value",
