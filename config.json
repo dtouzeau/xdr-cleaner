@@ -1,0 +1,22 @@
+{
+	"pageNumber": 1,
+	"ids": "",
+	"tenantID": "",
+	"token": "",
+	"fromDate": "",
+	"toDate": "",
+	"status": "",
+	"withEvents": "",
+	"withAffected": "",
+	"withHistory": "",
+	"outfile": "/home/claude/xdr-cleaner/out.log",
+	"baseURL": "https://mydomain.com/xdr/api/v1",
+	"debug": false,
+	"maxConcurrentPages": 50,
+	"filterMode": false,
+	"filteredOutfile": "/home/claude/xdr-cleaner/filtered.json",
+	"filters": null,
+	"closeAlerts": false,
+	"closeReason": "falsePositive",
+	"flushEvery": 1000
+}

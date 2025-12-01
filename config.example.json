@@ -1,0 +1,35 @@
+{
+	"pageNumber": 1,
+	"ids": "",
+	"tenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+	"token": "YOUR_BEARER_TOKEN_HERE",
+	"fromDate": "",
+	"toDate": "",
+	"status": "",
+	"withEvents": "true",
+	"withAffected": "",
+	"withHistory": "",
+	"outfile": "/home/claude/xdr-cleaner/out.log",
+	"baseURL": "https://api.louni.priv/xdr/api/v1",
+	"debug": true,
+	"maxConcurrentPages": 50,
+	"filterMode": true,
+	"filteredOutfile": "/home/claude/xdr-cleaner/filtered.json",
+	"filters": [
+		{
+			"field": "Observable|Value",
+			"value": "192.168.1.100"
+		},
+		{
+			"field": "Rule|Name",
+			"value": "False Positive Rule"
+		},
+		{
+			"field": "BaseEvent|DestinationAddress",
+			"value": "10.0.0.5"
+		}
+	],
+	"closeAlerts": true,
+	"closeReason": "falsePositive",
+	"flushEvery": 1000
+}

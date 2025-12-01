@@ -1,0 +1,43 @@
+XDR-CLEANER - LISTE DES FICHIERS
+=================================
+
+BINAIRE:
+--------
+xdr-cleaner              # Binaire exécutable (5.8 MB optimisé)
+
+CODE SOURCE GO:
+---------------
+main.go                  # Point d'entrée, téléchargement parallèle
+Config.go                # Gestion de la configuration
+Filter.go                # Logique de filtrage avancée
+Close.go                 # API de clôture des alertes
+Flush.go                 # Gestion du flush périodique (limite mémoire)
+Tools.go                 # Utilitaires HTTP (client, URL builder)
+structs.go               # Structures de données (Alert, Observable, etc.)
+
+CONFIGURATION:
+--------------
+config.json              # Configuration active (auto-généré)
+config.example.json      # Template avec filtres et clôture
+
+DOCUMENTATION:
+--------------
+README.md                # Documentation complète en français
+QUICKSTART.md            # Guide de démarrage rapide
+CURL_EXAMPLES.md         # Exemples de requêtes cURL
+FILES.txt                # Ce fichier
+
+DONNÉES DE TEST:
+----------------
+test_example.json        # Exemple d'alertes pour tests
+
+FICHIERS DE SORTIE (générés à l'exécution):
+--------------------------------------------
+out.log                  # Toutes les alertes téléchargées
+filtered.json            # Alertes filtrées (si filterMode=true)
+
+USAGE:
+------
+1. Éditer config.json
+2. Exécuter: ./xdr-cleaner
+3. Consulter out.log et filtered.json

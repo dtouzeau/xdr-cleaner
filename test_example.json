@@ -1,0 +1,74 @@
+{
+  "Alerts": [
+    {
+      "ID": 1,
+      "InternalID": "test-alert-001",
+      "TenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+      "Name": "Suspicious Network Activity",
+      "Severity": "high",
+      "Status": "open",
+      "Observables": [
+        {
+          "Type": "ipv4",
+          "Value": "192.168.1.100",
+          "Details": "Source IP"
+        }
+      ],
+      "Rules": [
+        {
+          "ID": "rule-001",
+          "Name": "Malware Communication",
+          "Severity": "high",
+          "Type": "network"
+        }
+      ],
+      "OriginalEvents": [
+        {
+          "BaseEvents": [
+            {
+              "SourceAddress": "192.168.1.100",
+              "DestinationAddress": "10.0.0.5",
+              "DestinationPort": 443,
+              "TransportProtocol": "TCP",
+              "DeviceHostName": "firewall-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "InternalID": "test-alert-002",
+      "TenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
+      "Name": "Windows Defender False Positive",
+      "Severity": "low",
+      "Status": "open",
+      "Observables": [
+        {
+          "Type": "file",
+          "Value": "c:\\windows\\temp\\update.exe",
+          "Details": "File hash"
+        }
+      ],
+      "Rules": [
+        {
+          "ID": "rule-002",
+          "Name": "Windows Defender Alert",
+          "Severity": "low",
+          "Type": "endpoint"
+        }
+      ],
+      "OriginalEvents": [
+        {
+          "BaseEvents": [
+            {
+              "SourceAddress": "192.168.1.50",
+              "DeviceHostName": "desktop-user01",
+              "Message": "Potential malware detected"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
