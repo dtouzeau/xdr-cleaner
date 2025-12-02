@@ -27,7 +27,7 @@ To use query filters, add the `queryFilters` object to your `config.json`:
 
 With the above configuration, the application will generate URLs like:
 ```
-https://api.louni.priv/xdr/api/v1/alerts?tenantID=3d6c4203-7328-4fb2-98fa-f37d385ffbde&status_ne=Closed&name_contains=R219_01&observable_value_contains=62.201.149&page=1
+https://your.xdr.server/xdr/api/v1/alerts?tenantID=3d6c4203-7328-4fb2-98fa-f37d385ffbde&status_ne=Closed&name_contains=R219_01&observable_value_contains=62.201.149&page=1
 ```
 
 ## Supported Filter Operators
