@@ -8,26 +8,27 @@ import (
 )
 
 type JsonConfig struct {
-	PageNumber          int      `json:"pageNumber"`
-	Ids                 string   `json:"ids"`
-	TenantID            string   `json:"tenantID"`
-	Token               string   `json:"token"`
-	FromDate            string   `json:"fromDate"`
-	ToDate              string   `json:"toDate"`
-	Status              string   `json:"status"`
-	WithEvents          string   `json:"withEvents"`
-	WithAffected        string   `json:"withAffected"`
-	WithHistory         string   `json:"withHistory"`
-	Outfile             string   `json:"outfile"`
-	BaseURL             string   `json:"baseURL"`
-	Debug               bool     `json:"debug"`
-	MaxConcurrentPages  int      `json:"maxConcurrentPages"`
-	FilterMode          bool     `json:"filterMode"`
-	FilteredOutfile     string   `json:"filteredOutfile"`
-	Filters             []Filter `json:"filters"`
-	CloseAlerts         bool     `json:"closeAlerts"`
-	CloseReason         string   `json:"closeReason"`
-	FlushEvery          int      `json:"flushEvery"`
+	PageNumber         int               `json:"pageNumber"`
+	Ids                string            `json:"ids"`
+	TenantID           string            `json:"tenantID"`
+	Token              string            `json:"token"`
+	FromDate           string            `json:"fromDate"`
+	ToDate             string            `json:"toDate"`
+	Status             string            `json:"status"`
+	WithEvents         string            `json:"withEvents"`
+	WithAffected       string            `json:"withAffected"`
+	WithHistory        string            `json:"withHistory"`
+	Outfile            string            `json:"outfile"`
+	BaseURL            string            `json:"baseURL"`
+	Debug              bool              `json:"debug"`
+	MaxConcurrentPages int               `json:"maxConcurrentPages"`
+	FilterMode         bool              `json:"filterMode"`
+	FilteredOutfile    string            `json:"filteredOutfile"`
+	Filters            []Filter          `json:"filters"`
+	CloseAlerts        bool              `json:"closeAlerts"`
+	CloseReason        string            `json:"closeReason"`
+	FlushEvery         int               `json:"flushEvery"`
+	QueryFilters       map[string]string `json:"queryFilters"`
 }
 
 type Filter struct {

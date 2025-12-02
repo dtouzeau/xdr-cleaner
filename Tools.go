@@ -23,6 +23,7 @@ func BuildURL(TheConf JsonConfig, currentPage int) string {
 	for _, v := range strings.Split(TheConf.TenantID, ",") {
 		params.Add("tenantID", strings.TrimSpace(v))
 	}
+	params.Add("status_ne", "Closed")
 
 	if TheConf.FromDate != "" {
 		if _, err := time.Parse(time.RFC3339, TheConf.FromDate); err == nil {
@@ -52,6 +53,16 @@ func BuildURL(TheConf JsonConfig, currentPage int) string {
 
 	if TheConf.WithHistory != "" {
 		params.Set("withHistory", TheConf.WithHistory)
+	}
+
+	// Add custom query filters from config
+	// Supports operators like _contains, _ne, _gt, _lt, etc.
+	if TheConf.QueryFilters != nil {
+		for key, value := range TheConf.QueryFilters {
+			if value != "" {
+				params.Add(key, value)
+			}
+		}
 	}
 
 	return TheConf.BaseURL + "?" + params.Encode()
