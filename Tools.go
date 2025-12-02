@@ -23,7 +23,6 @@ func BuildURL(TheConf JsonConfig, currentPage int) string {
 	for _, v := range strings.Split(TheConf.TenantID, ",") {
 		params.Add("tenantID", strings.TrimSpace(v))
 	}
-	params.Add("status_ne", "Closed")
 
 	if TheConf.FromDate != "" {
 		if _, err := time.Parse(time.RFC3339, TheConf.FromDate); err == nil {
