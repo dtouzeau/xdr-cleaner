@@ -12,7 +12,7 @@ To use query filters, add the `queryFilters` object to your `config.json`:
   "pageNumber": 1,
   "tenantID": "3d6c4203-7328-4fb2-98fa-f37d385ffbde",
   "token": "your-api-token-here",
-  "baseURL": "https://api.louni.priv/xdr/api/v1/alerts",
+  "baseURL": "https://api.your.xdr.net/xdr/api/v1/alerts",
   "debug": true,
   "maxConcurrentPages": 50,
   "queryFilters": {
@@ -90,7 +90,7 @@ You can combine multiple filters to create complex queries:
   "withAffected": "true",
   "withHistory": "false",
   "outfile": "/var/log/xdr/out.log",
-  "baseURL": "https://api.louni.priv/xdr/api/v1/alerts",
+  "baseURL": "https://api.your.xdr.net/xdr/api/v1/alerts",
   "debug": true,
   "maxConcurrentPages": 10,
   "filterMode": true,
@@ -115,5 +115,5 @@ You can combine multiple filters to create complex queries:
 
 Enable `"debug": true` in your configuration to see the generated URLs in the output:
 ```
-Fetching page 1: https://api.louni.priv/xdr/api/v1/alerts?name_contains=R219_01&observable_value_contains=62.201.149&page=1&status_ne=Closed&tenantID=3d6c4203-7328-4fb2-98fa-f37d385ffbde
+Fetching page 1: https://api.your.xdr.net/xdr/api/v1/alerts?name_contains=R219_01&observable_value_contains=62.201.149&page=1&status_ne=Closed&tenantID=3d6c4203-7328-4fb2-98fa-f37d385ffbde
 ```
