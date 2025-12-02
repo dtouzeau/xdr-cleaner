@@ -22,7 +22,6 @@ To use query filters, add the `queryFilters` object to your `config.json`:
   }
 }
 ```
-
 ## Generated URL
 
 With the above configuration, the application will generate URLs like:
